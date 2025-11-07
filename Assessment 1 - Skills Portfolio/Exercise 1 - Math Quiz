@@ -226,4 +226,5 @@ class MathQuiz:
 if __name__ == "__main__":
     root = tk.Tk()
     app = MathQuiz(root)
+
     root.mainloop()
