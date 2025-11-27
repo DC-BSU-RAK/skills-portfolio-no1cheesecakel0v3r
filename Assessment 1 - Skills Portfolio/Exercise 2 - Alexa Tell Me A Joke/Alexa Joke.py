@@ -5,7 +5,7 @@
 # - Tkinter Canvas Rounded Rectangle Techniques: https://stackoverflow.com/questions/44099594/how-to-make-rounded-buttons-in-tkinter
 # - Typewriter-style text animation: Custom implementation using Tkinter 'after' method : https://www.geeksforgeeks.org/how-to-create-typewriter-text-animation-in-tkinter/
 # - GUI Design Inspiration: Standard Tkinter layout patterns and pastel-themed UI ideas : 
-# - Pastel color schemes: https://colorhunt.co/palette/pastel
+# - Pastel color schemes: https://colorhunt.co/palettes/pastel
 # - Tkinter layout patterns: https://realpython.com/python-gui-tkinter/
 
 import tkinter as tk
@@ -267,6 +267,12 @@ class JokeApp:
 # ----------------- Run the application -----------------
 if __name__=="__main__":
     root = tk.Tk()
+    
+    # Set window icon (replace "joke_icon.ico" with your icon file if different)
+    try:
+        root.iconbitmap("joke_icon.ico")
+    except Exception as e:
+        print("Failed to set icon:", e)
+    
     app = JokeApp(root)
     root.mainloop()
-
